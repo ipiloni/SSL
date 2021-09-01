@@ -9,15 +9,16 @@ int main(){
         c = get_token();
         switch (c){
             case SEP:
-            printf("Separador\n");
+            printf("Separador\n", c);
             separador++;
             break;
             
             case CAD:
-            printf("Cadena\n");
+            printf("Cadena\n", c);
             cadena++;
             break;
             }
     } while(c != FDT);
+    printf("Fin de Texto\n", c);
     return 0;
 }
