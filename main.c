@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "scanner.h"
 
-int finDeTexto = 0, separador = 0, cadena = 0;
 TOKEN c;
 
 int main(){
@@ -10,12 +9,10 @@ int main(){
         switch (c){
             case SEP:
             printf("Separador\n", c);
-            separador++;
             break;
             
             case CAD:
             printf("Cadena\n", c);
-            cadena++;
             break;
             }
     } while(c != FDT);
