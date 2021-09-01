@@ -17,10 +17,6 @@ int main(){
             printf("Cadena\n");
             cadena++;
             break;
-            
-            case FDT:
-            printf("Fin de Texto\n");
-            break;
             }
     } while(c != FDT);
     return 0;
