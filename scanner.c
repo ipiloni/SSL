@@ -1,7 +1,5 @@
 #include "scanner.h"
 
-TOKEN token;
-
 void get_token(char c){
     if (isalnum(c))
         printf("\nCadena: ", c);
