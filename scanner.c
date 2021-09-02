@@ -1,7 +1,15 @@
 #include "scanner.h"
 
+TOKEN token;
+
 void get_token(char c){
-    switch (c) {
+    if (isalnum(c))
+        printf("\nCadena: ", c);
+    else if (ispunct(c))
+        printf("\nSeparador: ", c);
+
+
+/*    switch (c) {
         case SEP:
             printf("\nSeparador: ", c);
             break;
@@ -15,4 +23,5 @@ void get_token(char c){
             printf("\nError");
             break;
     }
+*/
 }
