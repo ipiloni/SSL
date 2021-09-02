@@ -5,9 +5,8 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-//typedef enum{FDT, SEP, CAD} TOKEN;
+int aux = 0;
 
-int a = 0;
 void get_token(char c);
 
 #endif /*SCANNER_H_INCLUDED*/

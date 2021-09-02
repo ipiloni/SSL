@@ -4,17 +4,17 @@ void get_token(char c){
 
     if (!isspace(c)){
         if (c == ','){
-            a = 0;
+            aux = 0;
             printf("\nSeparador: %c", c);
         }
         else {
-            if (a == 0){
+            if (aux == 0){
                 printf("\nCadena: ");
             }
+            aux++;
             printf("%c", c);
-            a++;
         }
     } else {
-        a = 0;
+        aux = 0;
     }
 }
