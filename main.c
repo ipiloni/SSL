@@ -1,21 +1,14 @@
+/*En main.c solo vamos a tener la función main que llama a la
+función get_token (que estará en scanner.c) y muestra en pantalla
+los resultados devueltos: que token es y el lexema correspondiente.*/
 #include <stdio.h>
 #include "scanner.h"
 
-TOKEN c;
+char c;
 
-int main(){
-    do{
-        c = get_token();
-        switch (c){
-            case SEP:
-            printf("Separador\n", c);
-            break;
-            
-            case CAD:
-            printf("Cadena\n", c);
-            break;
-            }
-    } while(c != FDT);
-    printf("Fin de Texto\n", c);
+int main() {
+while (c = getchar() != EOF){
+    get_token(c);   
+    }
     return 0;
 }

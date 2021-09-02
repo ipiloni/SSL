@@ -6,7 +6,6 @@
 #include <stdlib.h>
 
 typedef enum{FDT, SEP, CAD} TOKEN;
-
-int get_token();
+void get_token(char);
 
 #endif //SCANNER_H_INCLUDED
