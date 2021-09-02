@@ -1,4 +1,4 @@
-#include "scanner.h"
+#include "scanner.c"
 
 char c;
 
@@ -7,7 +7,7 @@ while ((c = getchar()) != EOF){
     get_token(c);   
     }
     if (c == EOF){
-        printf("Fin de Texto");
+        printf("\nFin de Texto");
     }
     return 0;
 }
