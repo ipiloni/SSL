@@ -1,25 +1,20 @@
 #include "scanner.h"
 
 void get_token(char c){
-    if (isalnum(c))
-        printf("\nCadena: ", c);
-    else if (ispunct(c))
-        printf("\nSeparador: ", c);
 
-
-/*    switch (c) {
-        case SEP:
-            printf("\nSeparador: ", c);
-            break;
-        case CAD:
-            printf("\nCadena: ", c);
-            break;
-        case FDT:
-            printf("\nFin de Texto.");
-            break;
-        default:
-            printf("\nError");
-            break;
+    if (!isspace(c)){
+        if (c == ','){
+            a = 0;
+            printf("\nSeparador: %c", c);
+        }
+        else {
+            if (a == 0){
+                printf("\nCadena: ");
+            }
+            printf("%c", c);
+            a++;
+        }
+    } else {
+        a = 0;
     }
-*/
 }

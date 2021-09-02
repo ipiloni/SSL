@@ -1,11 +1,14 @@
 #ifndef SCANNER_H_INCLUDED
 #define SCANNER_H_INCLUDED
-#include <stdio.h>
-#include <ctype.h>      
-#include <stdbool.h>
-#include <stdlib.h>
 
-typedef enum{FDT, SEP, CAD} TOKEN;
-void get_token(char);
+    #include <ctype.h>      
+    #include <stdbool.h>
+    #include <stdio.h>
 
-#endif //SCANNER_H_INCLUDED
+    typedef enum{FDT, SEP, CAD} TOKEN;
+
+int a = 0;
+void get_token(char c);
+
+
+#endif /*SCANNER_H_INCLUDED*/
