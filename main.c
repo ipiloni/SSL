@@ -1,4 +1,4 @@
-#include "scanner.c"
+#include "scanner.h"
 
 char c;
 
